@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(rgb(242, 230, 196), rgb(82, 52, 158));
+    display:flexbox;
+}
+/*-------------------------------------------------------------------  */
+
+/* header css style for mobile */
+myname {
+    /* my name in the doc */
+    font-family: Georgia, serif;
+    font-size: 150%; 
+    color: rgb(105, 149, 187);
+}
+
+header {
+   display:flex;
+   flex-flow: column;
+
+}
+
+
+.text-align {
+  
+    font-family: Georgia, serif, bold;
+}
+
+.navsection {
+    /* header items background  */
+    border-bottom: #75429d 5px solid;
+}
+
+header li {
+    /* contact me about me work */
+   list-style-type: none;
+   margin: 5%;
+   
+}
+/*-------------------------------------------------------------------  */
+/*content position */
+container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* margin-left: -1.5rem ;
+    margin-right: -1.5rem; */
+}
+
+rowsection {
+    flex-basis: 1 0 100%;
+    
+}
+/*-------------------------------------------------------------------  */
+level1 {
+    /* about me section */
+}
+
+level2 {
+    /* work section */
+}
+
+level3 {
+    /* contact me section*/
+    margin-top: 5px;
+}
+/*-------------------------------------------------------------------  */
+#picprof {
+    border-radius: 50%;
+}
+/*-------------------------------------------------------------------  */
+html {
+    /* set 1rem to 10px instead of native 16px / 1.6rem is 16px, 2.0rem is 20px */
+    font-size: 62.5%;
+}
+/*-------------------------------------------------------------------  */
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+}
+
+/* media query for larger screens */
+
+@media screen and (min-width: 992px) {
+    myname {
+        /* my picture */
+        width: 100%;
+        font-family: Georgia, serif;
+        font-size: 4rem;
+        color: rgb(105, 149, 187);
+    }
+    
+    header {
+        width: 100%;
+    }
+    
+    
+    .text-align {
+        position: relative;
+        left: 50%;
+        top: -100%;
+        font-family: Georgia, serif, bold;
+    }
+    
+    .navsection {
+        /* header items background  */
+        height: 6rem;
+        width: 100%;
+        line-height: 6rem;
+        z-index: 2;
+        border-bottom: #75429d 5px solid;
+    }
+    
+    header li {
+        /* contact me about me work */
+        display: inline;
+        padding: 2rem;
+        font-size: 2rem;
+        font-family: inherit;
+        font-style: unset;
+    }
+}
